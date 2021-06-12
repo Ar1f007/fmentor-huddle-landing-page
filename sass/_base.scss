@@ -34,18 +34,16 @@ body {
   font-weight: 400;
   line-height: 1.6;
   width: 100vw;
-  min-height: 100vh;
+
   background: url(../images/bg-desktop.svg);
+  background-color: $violet;
 
   @media screen and (max-width: 64em) {
     background: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: top left;
     background-color: $violet;
   }
-
-  background-color: $violet;
-  overflow: hidden;
 }
 
 // Typography

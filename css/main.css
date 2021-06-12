@@ -35,16 +35,14 @@ body {
   font-weight: 400;
   line-height: 1.6;
   width: 100vw;
-  min-height: 100vh;
   background: url(../images/bg-desktop.svg);
   background-color: #674baf;
-  overflow: hidden;
 }
 @media screen and (max-width: 64em) {
   body {
     background: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: top left;
     background-color: #674baf;
   }
 }
@@ -82,7 +80,6 @@ body {
 
 .main {
   width: 90%;
-  height: 100%;
   margin: 0 auto;
   display: flex;
   overflow: hidden;
@@ -90,7 +87,7 @@ body {
 @media screen and (max-width: 64em) {
   .main {
     flex-direction: column;
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -149,9 +146,9 @@ body {
 @media screen and (max-width: 25em) {
   .section-intro__text {
     width: 100%;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 5rem;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 
