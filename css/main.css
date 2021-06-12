@@ -56,6 +56,9 @@ body {
   padding-right: 8rem;
   margin-bottom: 2.5rem;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-animation: moveIntro 1s 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.175);
+          animation: moveIntro 1s 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.175);
 }
 @media screen and (max-width: 64em) {
   .primary-heading {
@@ -65,6 +68,25 @@ body {
   }
 }
 
+@-webkit-keyframes moveIntro {
+  0% {
+    transform: translateY(80rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveIntro {
+  0% {
+    transform: translateY(80rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
 .header {
   width: 90%;
   margin: 4rem auto 7rem;
@@ -97,6 +119,9 @@ body {
 }
 .section-mockup__img {
   width: 100%;
+  opacity: 0;
+  -webkit-animation: moveImg 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+          animation: moveImg 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
 }
 @media screen and (max-width: 64em) {
   .section-mockup__img {
@@ -109,6 +134,25 @@ body {
   }
 }
 
+@-webkit-keyframes moveImg {
+  0% {
+    transform: translateX(-40rem) rotateX(-20deg);
+  }
+  100% {
+    transform: translateX(0) rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveImg {
+  0% {
+    transform: translateX(-40rem) rotateX(-20deg);
+  }
+  100% {
+    transform: translateX(0) rotateX(0);
+    opacity: 1;
+  }
+}
 .section-intro {
   flex: 1;
   position: relative;
@@ -131,6 +175,9 @@ body {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 4rem;
+  opacity: 0;
+  -webkit-animation: moveIntro 1s 0.7s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+          animation: moveIntro 1s 0.7s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
 }
 @media screen and (max-width: 64em) {
   .section-intro__text {
@@ -156,6 +203,9 @@ body {
   border-radius: 10rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
+  opacity: 0;
+  -webkit-animation: moveIntro 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 0.975);
+          animation: moveIntro 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 0.975);
   transition: all 0.2s;
 }
 @media screen and (max-width: 25em) {
@@ -190,6 +240,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  -webkit-animation: moveIntro 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+          animation: moveIntro 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
 }
 .social-media .icon-box:not(:last-of-type) {
   margin-right: 1.5rem;
