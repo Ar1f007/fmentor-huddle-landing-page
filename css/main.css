@@ -64,11 +64,6 @@ body {
     padding: 0;
   }
 }
-@media screen and (max-width: 25em) {
-  .primary-heading {
-    font-weight: 700;
-  }
-}
 
 .header {
   width: 90%;
