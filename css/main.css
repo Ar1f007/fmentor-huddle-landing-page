@@ -120,8 +120,8 @@ body {
 .section-mockup__img {
   width: 100%;
   opacity: 0;
-  -webkit-animation: moveImg 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
-          animation: moveImg 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+  -webkit-animation: moveIn 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+          animation: moveIn 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
 }
 @media screen and (max-width: 64em) {
   .section-mockup__img {
@@ -131,10 +131,31 @@ body {
 @media screen and (max-width: 25em) {
   .section-mockup__img {
     width: 100%;
+    -webkit-animation: moveImg-phone 1s 0.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+            animation: moveImg-phone 1s 0.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
   }
 }
 
-@-webkit-keyframes moveImg {
+@-webkit-keyframes moveImg-phone {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveImg-phone {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes moveIn {
   0% {
     transform: translateX(-40rem) rotateX(-20deg);
   }
@@ -143,8 +164,7 @@ body {
     opacity: 1;
   }
 }
-
-@keyframes moveImg {
+@keyframes moveIn {
   0% {
     transform: translateX(-40rem) rotateX(-20deg);
   }

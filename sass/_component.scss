@@ -33,7 +33,7 @@
   &__img {
     width: 100%;
     opacity: 0;
-    animation: moveImg 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
+    animation: moveIn 1s 0.9s forwards cubic-bezier(0.175, 0.885, 0.32, 1.075);
 
     @media screen and (max-width: 64em) {
       width: 90%;
@@ -41,11 +41,23 @@
 
     @media screen and (max-width: 25em) {
       width: 100%;
+      animation: moveImg-phone 1s 0.4s forwards
+        cubic-bezier(0.175, 0.885, 0.32, 1.075);
     }
   }
 }
+@keyframes moveImg-phone {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
 
-@keyframes moveImg {
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
   0% {
     transform: translateX(-40rem) rotateX(-20deg);
   }
