@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: inherit;
   text-decoration: none;
+  outline: none;
 }
 
 html {
@@ -65,7 +66,7 @@ body {
 }
 @media screen and (max-width: 25em) {
   .primary-heading {
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
