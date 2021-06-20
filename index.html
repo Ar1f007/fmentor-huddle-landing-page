@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+  </head>
 
-  <link rel="stylesheet" href="css/main.css">
+  <body>
+    <header class="header">
+      <img src="images/logo.svg" alt="logo" class="logo" />
+    </header>
 
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-</head>
+    <main class="main">
+      <figure class="section-mockup">
+        <img
+          src="images/illustration-mockups.svg"
+          alt="illustration-mockups"
+          class="section-mockup__img"
+        />
+      </figure>
 
-<body>
-  <header class="header">
-    <img src="images/logo.svg" alt="logo" class="logo">
-  </header>
+      <section class="section-intro">
+        <h1 class="primary-heading">Build The Community Your Fans Will Love</h1>
 
-  <main class="main">
+        <p class="section-intro__text">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
 
-    <figure class="section-mockup">
+        <a href="#" class="cta">Register</a>
 
-      <img src="images/illustration-mockups.svg" alt="illustration-mockups" class="section-mockup__img">
+        <ul class="social-media">
+          <li class="icon-box">
+            <a href="#">
+              <svg class="icon icon-facebook">
+                <use
+                  xlink:href="images/icons/symbol-defs.svg#icon-facebook"
+                ></use>
+              </svg>
+            </a>
+          </li>
 
-    </figure>
+          <li class="icon-box">
+            <a href="#">
+              <svg class="icon icon-twitter">
+                <use
+                  xlink:href="images/icons/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+          </li>
 
-    <section class="section-intro">
-      <h1 class="primary-heading">
-        Build The Community Your Fans Will Love
-      </h1>
-
-      <p class="section-intro__text">
-        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-        Create connections with your users as you engage in genuine discussion.
-      </p>
-
-      <a href="#" class="cta">Register</a>
-
-      <ul class="social-media">
-        <li class="icon-box">
-          <a href="#">
-            <svg class="icon icon-facebook">
-              <use xlink:href="images/icons/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="icon-box">
-          <a href="#">
-            <svg class="icon icon-twitter">
-              <use xlink:href="images/icons/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="icon-box">
-          <a href="#">
-            <svg class="icon icon-instagram">
-              <use xlink:href="images/icons/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-  </main>
-</body>
-
+          <li class="icon-box">
+            <a href="#">
+              <svg class="icon icon-instagram">
+                <use
+                  xlink:href="images/icons/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
