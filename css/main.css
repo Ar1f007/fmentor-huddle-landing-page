@@ -74,6 +74,7 @@ body {
   }
   100% {
     transform: translateY(0) rotateY(0);
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -84,6 +85,7 @@ body {
   }
   100% {
     transform: translateY(0) rotateY(0);
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -223,6 +225,7 @@ body {
   border-radius: 10rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
+  visibility: hidden;
   opacity: 0;
   -webkit-animation: moveIntro 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 0.975);
           animation: moveIntro 1s 1.4s forwards cubic-bezier(0.175, 0.885, 0.32, 0.975);
